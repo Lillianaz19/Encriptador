@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <title>Document</title>
+
+    </head>
+
+    <body>
+        <header>
+            <img id="encabezado" src="Imagenes/logoAlura.png" alt="Logo Alura">
+		</header>
+
+        <main>
+            <section class="mensajeInicial">
+                <label for="textAreaMensajeInicial" id="lblMensajeInicial">Ingrese el texto deseado</label>
+                <textarea cols="50" rows="25" class="textAreaMensajeInicial"></textarea>
+
+                <div>
+                    <h5 class="Advertencia">Solo letras minúsculas y sin acento.</h5>
+                </div>
+
+                <div class="botones">
+                    <button class="botonEncriptar" onclick="btnEncriptar()">Encriptar</button> 
+                    <button class="botonDesencriptar" onclick="btnDesencriptar()">Desencriptar</button> 
+                </div>
+            </section>
+            
+            <section class="mensajeFinal">
+                <label for="textAreaMensajeResuelto" id="lblMensajeResuelto">Resultado</label>
+                <textarea cols="50" rows="25" class="textAreaMensajeResuelto"></textarea> 
+            </section>
+
+            <section class="botonesAux">
+                <button class="botonCopiar" onclick="btnCopiar()">Copiar resultado</button>
+                <button class="botonBorrar" onclick="btnBorrar()">Borrar todo</button>
+            </section>
+            
+        </main>
+        <script src="./script.js"></script>
+    </body>
+</html>
+
